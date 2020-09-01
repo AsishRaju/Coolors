@@ -34,7 +34,7 @@ class PaletteList extends Component {
 
 	}
 	handleClick = () => {
-		window.location.href = "https://github.com/AsishRaju";
+		window.location.href = "https://github.com/AsishRaju/coolors";
 	};
 	openDialog(id) {
 		this.setState({ openDeleteDialog: true, deletingId: id });
