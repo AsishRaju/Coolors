@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+.page {
+	height: 100vh;
+	position: fixed;
+	width: 100%;
+}
+
+.logo{
+	font-family: 'Courier New', Courier, monospace;
+}
