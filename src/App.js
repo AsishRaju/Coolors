@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Route, Switch } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
-
+import ReactGA from 'react-ga';
 import Palette from "./Components/Palette";
 import PaletteList from "./Components/PaletteList";
 import SingleColorPalette from "./Components/SingleColorPalette";
@@ -20,6 +20,8 @@ class App extends Component {
 		this.savePalette = this.savePalette.bind(this);
 		this.findPalette = this.findPalette.bind(this);
 		this.deletePalette = this.deletePalette.bind(this);
+		ReactGA.initialize('UA-176936184-1');
+		ReactGA.pageview(window.location.pathname + window.location.search);
 	}
 	findPalette(id) {
 		return this.state.palettes.find(function (palette) {
